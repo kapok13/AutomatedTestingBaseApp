@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/profile_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_username"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_first_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_first_name"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_last_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_last_name"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_age"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_last_age"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_adress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_address"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/profile_website"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/profile_website"
+            android:inputType="textWebEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/profile_gender"/>
+
+        <Spinner
+            android:id="@+id/profile_gender"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/profile_website"
+            android:inputType="textWebEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/profile_to_blog"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_to_blog"/>
+
+        <Button
+            android:id="@+id/profile_update_profile"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_update_profile"/>
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_logout"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
