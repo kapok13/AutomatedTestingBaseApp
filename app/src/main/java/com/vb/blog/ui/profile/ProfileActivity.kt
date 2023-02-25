@@ -20,7 +20,7 @@ import com.vb.blog.ui.login.LoginActivity
 class ProfileActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityProfileBinding
-    var database = FirebaseDatabase.getInstance()
+    private var database = FirebaseDatabase.getInstance()
     private lateinit var adapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {

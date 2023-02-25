@@ -18,8 +18,8 @@ class PostsDetailActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val adapter = CommentsRecyclerAdapter()
     private val comments = mutableListOf<Comment>()
-    var database = FirebaseDatabase.getInstance()
-    val postsRef = database.getReference("posts")
+    private var database = FirebaseDatabase.getInstance()
+    private val postsRef = database.getReference("posts")
     private var username: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

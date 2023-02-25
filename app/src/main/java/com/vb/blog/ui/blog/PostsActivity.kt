@@ -19,8 +19,8 @@ class PostsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPostsBinding
     private val adapter = PostsRecyclerAdapter()
     private val posts = mutableListOf<Post>()
-    var database = FirebaseDatabase.getInstance()
-    val postsRef = database.getReference("posts")
+    private var database = FirebaseDatabase.getInstance()
+    private val postsRef = database.getReference("posts")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
