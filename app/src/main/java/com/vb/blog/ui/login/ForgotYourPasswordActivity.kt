@@ -2,8 +2,8 @@ package com.vb.blog.ui.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Patterns
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.util.PatternsCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.vb.blog.R
 import com.vb.blog.databinding.ActivityForgotPasswordBinding
@@ -19,7 +19,7 @@ class ForgotYourPasswordActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.resetPasswordButton.setOnClickListener {
-            if (Patterns.EMAIL_ADDRESS.matcher(binding.resetUsername.text).matches().not()
+            if (PatternsCompat.EMAIL_ADDRESS.matcher(binding.resetUsername.text).matches().not()
                 || binding.resetUsername.text.isNullOrEmpty()
             ) {
                 binding.resetUsername.error = getString(R.string.registration_invalid_email)

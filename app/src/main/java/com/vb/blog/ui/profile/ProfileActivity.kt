@@ -77,7 +77,7 @@ class ProfileActivity : AppCompatActivity() {
                 || binding.profileEmail.text.isNullOrEmpty()
             ) {
                 binding.profileEmail.error = getString(R.string.registration_invalid_email)
-            } else if (binding.profileEmail.text.toString() == auth.currentUser?.email
+            } else if (binding.profileEmail.text.toString() != auth.currentUser?.email
                 && auth.currentUser?.email.isNullOrEmpty().not()
             ) {
                 auth.currentUser?.updateEmail(binding.profileEmail.text.toString())

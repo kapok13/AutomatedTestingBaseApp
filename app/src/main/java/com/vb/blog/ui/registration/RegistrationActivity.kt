@@ -2,8 +2,8 @@ package com.vb.blog.ui.registration
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Patterns
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.util.PatternsCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.vb.blog.R
 import com.vb.blog.databinding.ActivityRegistrationBinding
@@ -26,7 +26,7 @@ class RegistrationActivity : AppCompatActivity() {
                         || binding.registrationUsername.text.isNullOrEmpty() -> {
                     errorMessage = getString(R.string.registration_empty_fields)
                 }
-                Patterns.EMAIL_ADDRESS.matcher(binding.registrationUsername.text).matches().not() -> {
+                PatternsCompat.EMAIL_ADDRESS.matcher(binding.registrationUsername.text).matches().not() -> {
                     errorMessage = getString(R.string.registration_invalid_email)
                 }
                 binding.registrationPassword.text.length < 6 -> {
