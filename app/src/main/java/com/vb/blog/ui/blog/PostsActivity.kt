@@ -22,7 +22,7 @@ class PostsActivity : AppCompatActivity() {
     private var database = FirebaseDatabase.getInstance()
     private val postsRef = database.getReference("posts")
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: undle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPostsBinding.inflate(layoutInflater)
         setContentView(binding.root)
